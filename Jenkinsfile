@@ -1,4 +1,5 @@
 node {
+	checkout scm
     stage('Preparation') {
         catchError(buildResult: 'SUCCESS') {
 	    sh 'rm -rf /var/jenkins_home/workspace/BuildSampleApp/tempdir'
